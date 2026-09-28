@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="60%" stop-color="#0B101E"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="650" fill="url(#bgGrad2)" rx="20"/>
+
+  <pattern id="grid2" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="650" fill="url(#grid2)" rx="20"/>
+
+  <!-- Left: Multi-Modal Pipeline Visualization -->
+  <g transform="translate(100, 150)">
+    <!-- Stage 1: Face Embeddings -->
+    <rect x="0" y="0" width="280" height="90" rx="12" fill="#0D1322" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5"/>
+    <circle cx="35" cy="45" r="18" fill="rgba(56, 189, 248, 0.15)"/>
+    <text x="35" y="50" fill="#38BDF8" font-family="monospace" font-size="14" text-anchor="middle">01</text>
+    <text x="70" y="38" fill="#F8FAFC" font-family="sans-serif" font-size="15" font-weight="700">Face Vector Extraction</text>
+    <text x="70" y="60" fill="#94A3B8" font-family="monospace" font-size="12">InsightFace Buffalo_L (512-D)</text>
+
+    <!-- Connector 1 -->
+    <path d="M 280 45 L 340 45" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 4"/>
+    <polygon points="340,45 330,40 330,50" fill="#38BDF8"/>
+
+    <!-- Stage 2: Fast Vector Search -->
+    <rect x="340" y="0" width="280" height="90" rx="12" fill="#0D1322" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1.5"/>
+    <circle cx="375" cy="45" r="18" fill="rgba(139, 92, 246, 0.15)"/>
+    <text x="375" y="50" fill="#A78BFA" font-family="monospace" font-size="14" text-anchor="middle">02</text>
+    <text x="410" y="38" fill="#F8FAFC" font-family="sans-serif" font-size="15" font-weight="700">FAISS Index Search</text>
+    <text x="410" y="60" fill="#94A3B8" font-family="monospace" font-size="12">Sub-millisecond similarity</text>
+
+    <!-- Stage 3: Anti-Spoofing & Liveness -->
+    <rect x="0" y="140" width="280" height="90" rx="12" fill="#0D1322" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1.5"/>
+    <circle cx="35" cy="185" r="18" fill="rgba(16, 185, 129, 0.15)"/>
+    <text x="35" y="190" fill="#34D399" font-family="monospace" font-size="14" text-anchor="middle">03</text>
+    <text x="70" y="178" fill="#F8FAFC" font-family="sans-serif" font-size="15" font-weight="700">Anti-Spoofing Liveness</text>
+    <text x="70" y="200" fill="#94A3B8" font-family="monospace" font-size="12">EfficientNet-B0 Binary Model</text>
+
+    <!-- Stage 4: Secondary Factor -->
+    <rect x="340" y="140" width="280" height="90" rx="12" fill="#0D1322" stroke="rgba(236, 72, 153, 0.3)" stroke-width="1.5"/>
+    <circle cx="375" cy="185" r="18" fill="rgba(236, 72, 153, 0.15)"/>
+    <text x="375" y="190" fill="#F472B6" font-family="monospace" font-size="14" text-anchor="middle">04</text>
+    <text x="410" y="178" fill="#F8FAFC" font-family="sans-serif" font-size="15" font-weight="700">Iris Verification</text>
+    <text x="410" y="200" fill="#94A3B8" font-family="monospace" font-size="12">Second-factor Pattern Match</text>
+  </g>
+
+  <!-- Right: Holographic Biometric Head Target -->
+  <g transform="translate(900, 260)">
+    <circle cx="0" cy="0" r="180" fill="none" stroke="rgba(56, 189, 248, 0.2)" stroke-width="1"/>
+    <circle cx="0" cy="0" r="140" fill="none" stroke="rgba(139, 92, 246, 0.4)" stroke-width="2" stroke-dasharray="10 8"/>
+    <circle cx="0" cy="0" r="100" fill="rgba(56, 189, 248, 0.05)" filter="url(#glow2)"/>
+
+    <!-- Biometric Wireframe Nodes -->
+    <polygon points="0,-90 -50,-40 50,-40" fill="none" stroke="#38BDF8" stroke-width="2"/>
+    <polygon points="-50,-40 0,20 50,-40" fill="none" stroke="#8B5CF6" stroke-width="2"/>
+    <polygon points="-50,-40 -70,30 -20,70 0,20" fill="none" stroke="#38BDF8" stroke-width="1.5"/>
+    <polygon points="50,-40 70,30 20,70 0,20" fill="none" stroke="#8B5CF6" stroke-width="1.5"/>
+    <polygon points="-20,70 0,110 20,70 0,20" fill="none" stroke="#10B981" stroke-width="2"/>
+
+    <circle cx="-35" cy="-35" r="7" fill="#38BDF8" filter="url(#glow2)"/>
+    <circle cx="35" cy="-35" r="7" fill="#38BDF8" filter="url(#glow2)"/>
+    <circle cx="0" cy="20" r="5" fill="#8B5CF6"/>
+    <circle cx="0" cy="110" r="6" fill="#10B981" filter="url(#glow2)"/>
+  </g>
+
+  <!-- Header Text -->
+  <text x="100" y="80" fill="#38BDF8" font-family="monospace" font-size="14" font-weight="700" letter-spacing="2">ARCHITECTURE SCHEMATIC</text>
+  <text x="100" y="115" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="800">BioAttend Multi-Modal Biometric Pipeline</text>
+</svg>

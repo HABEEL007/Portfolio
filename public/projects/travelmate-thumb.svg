@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070A12"/>
+      <stop offset="50%" stop-color="#0E1626"/>
+      <stop offset="100%" stop-color="#141E33"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="tmGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#tmBg)" rx="16"/>
+
+  <pattern id="tmGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="500" fill="url(#tmGrid)" rx="16"/>
+
+  <!-- Glowing background elements -->
+  <circle cx="500" cy="250" r="140" fill="#F59E0B" opacity="0.08" filter="url(#tmGlow)"/>
+  <circle cx="300" cy="200" r="120" fill="#10B981" opacity="0.08" filter="url(#tmGlow)"/>
+
+  <!-- Lahore Badshahi Mosque & Tech UI abstraction -->
+  <g transform="translate(400, 240)">
+    <!-- Map Path Lines -->
+    <path d="M -250 80 Q -100 -40 0 60 T 200 -20" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="6 4" opacity="0.7"/>
+    <path d="M -180 120 Q -50 40 80 110 T 250 50" fill="none" stroke="#10B981" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
+
+    <!-- Mosque Dome Silhouette vector -->
+    <path d="M -120 70 Q -120 20 -80 0 Q -40 20 -40 70 Z" fill="rgba(245, 158, 11, 0.2)" stroke="#F59E0B" stroke-width="2"/>
+    <path d="M -40 70 Q -40 -30 0 -60 Q 40 -30 40 70 Z" fill="rgba(245, 158, 11, 0.3)" stroke="#F59E0B" stroke-width="2.5"/>
+    <path d="M 40 70 Q 40 20 80 0 Q 120 20 120 70 Z" fill="rgba(245, 158, 11, 0.2)" stroke="#F59E0B" stroke-width="2"/>
+    <line x1="-150" y1="70" x2="150" y2="70" stroke="#F59E0B" stroke-width="2"/>
+
+    <!-- Minaret Pins -->
+    <rect x="-140" y="-40" width="12" height="110" fill="rgba(245, 158, 11, 0.2)" stroke="#F59E0B" stroke-width="1.5"/>
+    <polygon points="-134,-55 -142,-40 -126,-40" fill="#F59E0B"/>
+    <rect x="128" y="-40" width="12" height="110" fill="rgba(245, 158, 11, 0.2)" stroke="#F59E0B" stroke-width="1.5"/>
+    <polygon points="134,-55 126,-40 142,-40" fill="#F59E0B"/>
+
+    <!-- Map Markers -->
+    <circle cx="-80" cy="0" r="7" fill="#EF4444" filter="url(#tmGlow)"/>
+    <circle cx="0" cy="-60" r="9" fill="#10B981" filter="url(#tmGlow)"/>
+    <circle cx="80" cy="0" r="7" fill="#3B82F6" filter="url(#tmGlow)"/>
+
+    <!-- GPS Pulse -->
+    <circle cx="0" cy="-60" r="22" fill="none" stroke="#10B981" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Badges -->
+  <rect x="50" y="45" width="145" height="28" rx="6" fill="rgba(245, 158, 11, 0.15)" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1"/>
+  <circle cx="66" cy="59" r="4" fill="#F59E0B"/>
+  <text x="78" y="63" fill="#F59E0B" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="1">FULL-STACK NODE</text>
+
+  <rect x="580" y="45" width="170" height="28" rx="6" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1"/>
+  <text x="595" y="63" fill="#34D399" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="1">HARDENED SECURITY</text>
+
+  <text x="50" y="430" fill="#FFFFFF" font-family="sans-serif" font-size="24" font-weight="800" letter-spacing="0.5">Lahore TravelMate</text>
+  <text x="50" y="455" fill="#94A3B8" font-family="sans-serif" font-size="13">Node.js · Express · Interactive Tourism & Heritage Guide</text>
+</svg>
