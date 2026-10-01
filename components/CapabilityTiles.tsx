@@ -68,7 +68,7 @@ export default function CapabilityTiles() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
             <div className="flex items-center gap-2 font-mono text-xs text-primary uppercase tracking-widest mb-2 font-semibold">
-              <span>// ARCHITECTURAL CAPABILITIES</span>
+              <span>ARCHITECTURAL CAPABILITIES</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-white tracking-tight">
               What I Build
