@@ -71,7 +71,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
             {/* Badges Overlay */}
             <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
               <span className="px-2.5 py-1 rounded-md text-[11px] font-mono font-medium tracking-wide bg-[#070A12]/80 backdrop-blur-md text-primary border border-primary/30">
-                {project.category}
+                {project.title}
               </span>
 
               <span
