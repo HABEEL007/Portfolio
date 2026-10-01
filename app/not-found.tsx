@@ -11,7 +11,7 @@ export default function NotFound() {
         </div>
 
         <span className="font-mono text-xs text-primary uppercase tracking-widest block mb-2">
-          ERROR 404 // ROUTE NOT FOUND
+          ERROR 404 — ROUTE NOT FOUND
         </span>
 
         <h1 className="text-3xl font-heading font-bold text-white mb-3">

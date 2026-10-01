@@ -19,7 +19,7 @@ export default function ContactPage() {
         <div className="max-w-3xl mb-12">
           <div className="flex items-center gap-2 font-mono text-xs text-primary uppercase tracking-widest mb-3 font-semibold">
             <MessageSquare className="w-3.5 h-3.5" />
-            <span>// DIRECT INQUIRY CHANNELS</span>
+            <span>DIRECT INQUIRY CHANNELS</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-heading font-extrabold text-white tracking-tight mb-4">
             Let&apos;s Connect

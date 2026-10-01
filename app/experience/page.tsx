@@ -69,7 +69,7 @@ export default function ExperiencePage() {
         {/* Section 1: Experience Timeline */}
         <div className="mb-20">
           <div className="flex items-center gap-2 font-mono text-xs text-text-dim uppercase tracking-wider mb-6">
-            <span>01 // PROFESSIONAL TIMELINE</span>
+            <span>01 — PROFESSIONAL TIMELINE</span>
           </div>
           <ExperienceTimeline />
         </div>
@@ -77,7 +77,7 @@ export default function ExperiencePage() {
         {/* Section 2: Technical Skill Grid */}
         <div>
           <div className="flex items-center gap-2 font-mono text-xs text-text-dim uppercase tracking-wider mb-6">
-            <span>02 // CORE TECHNICAL STACK</span>
+            <span>02 — CORE TECHNICAL STACK</span>
           </div>
           <SkillGrid />
         </div>

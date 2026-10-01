@@ -21,7 +21,7 @@ export default function ExperiencePreview() {
             <div className="lg:max-w-md">
               <div className="flex items-center gap-2 font-mono text-xs text-primary uppercase tracking-widest mb-3 font-semibold">
                 <Briefcase className="w-3.5 h-3.5" />
-                <span>// CURRENT ENGAGEMENT</span>
+                <span>CURRENT ENGAGEMENT</span>
               </div>
 
               <h2 className="text-3xl sm:text-4xl font-heading font-bold text-white tracking-tight mb-2">

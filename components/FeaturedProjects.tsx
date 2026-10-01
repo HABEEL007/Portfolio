@@ -33,7 +33,7 @@ export default function FeaturedProjects() {
           <div>
             <div className="flex items-center gap-2 font-mono text-xs text-primary uppercase tracking-widest mb-2 font-semibold">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>// PORTFOLIO SHOWCASE</span>
+              <span>PORTFOLIO SHOWCASE</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-white tracking-tight">
               Featured Projects

@@ -124,7 +124,7 @@ export default function ResumePage() {
           {/* Section: Summary */}
           <div className="mb-8">
             <h2 className="font-mono text-xs uppercase tracking-widest text-primary font-bold mb-3">
-              // Professional Summary
+              Professional Summary
             </h2>
             <p className="text-sm text-text-primary leading-relaxed font-sans">
               Results-driven AI Engineer specialized in Computer Vision, Multi-modal Biometrics, Deep Learning pipelines, and high-performance backend architectures. Experienced in building production-grade verification pipelines combining facial recognition (InsightFace), sub-second vector search (FAISS), and custom anti-spoofing liveness classifiers (EfficientNet-B0) deployed via asynchronous FastAPI services.
@@ -134,7 +134,7 @@ export default function ResumePage() {
           {/* Section: Experience */}
           <div className="mb-8">
             <h2 className="font-mono text-xs uppercase tracking-widest text-primary font-bold mb-4">
-              // Professional Experience
+              Professional Experience
             </h2>
 
             <div className="space-y-6">
@@ -221,7 +221,7 @@ export default function ResumePage() {
           {/* Section: Core Projects */}
           <div className="mb-8">
             <h2 className="font-mono text-xs uppercase tracking-widest text-primary font-bold mb-4">
-              // Selected Engineering Projects
+              Selected Engineering Projects
             </h2>
 
             <div className="grid grid-cols-1 gap-3.5">
@@ -275,7 +275,7 @@ export default function ResumePage() {
           {/* Section: Technical Skills */}
           <div className="mb-8">
             <h2 className="font-mono text-xs uppercase tracking-widest text-primary font-bold mb-3">
-              // Technical Competencies
+              Technical Competencies
             </h2>
 
             <div className="space-y-2 text-xs font-mono">
@@ -309,7 +309,7 @@ export default function ResumePage() {
           {/* Section: Education */}
           <div>
             <h2 className="font-mono text-xs uppercase tracking-widest text-primary font-bold mb-3">
-              // Education
+              Education
             </h2>
             <div className="flex items-center justify-between text-xs sm:text-sm">
               <span className="font-heading font-bold text-white">
